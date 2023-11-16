@@ -32,5 +32,7 @@ Requests (for API communication)
 Bootstrap (for styling)
 
  ![Home](Screenshot from 2023-11-16 17-34-30.png)
+ 
  ![Search Result](Screenshot from 2023-11-16 17-34-42.png)
+ 
  ![Details](Screenshot from 2023-11-16 17-34-49.png)
