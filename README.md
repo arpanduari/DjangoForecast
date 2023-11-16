@@ -31,8 +31,9 @@ Django
 Requests (for API communication)
 Bootstrap (for styling)
 
+## Home
  ![Home](1.png)
- 
+## Search Result 
  ![Search Result](2.png)
- 
+## Weather Details
  ![Details](3.png)
