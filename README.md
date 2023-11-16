@@ -31,8 +31,8 @@ Django
 Requests (for API communication)
 Bootstrap (for styling)
 
- ![Home](Screenshot from 2023-11-16 17-34-30.png)
+ ![Home](1.png)
  
- ![Search Result](Screenshot from 2023-11-16 17-34-42.png)
+ ![Search Result](2.png)
  
- ![Details](Screenshot from 2023-11-16 17-34-49.png)
+ ![Details](3.png)
