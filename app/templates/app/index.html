@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<form method="POST" action="search/">
+    {% csrf_token %}
+    <div class="input-group">
+        <input type="search" class="form-control rounded" placeholder="Search Location eg., Mumbai" aria-label="Search"
+               aria-describedby="search-addon" id="location" name="location"/>
+        <button type="submit" class="btn btn-outline-primary">search</button>
+    </div>
+</form>
+{% endblock %}

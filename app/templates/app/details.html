@@ -1,0 +1,24 @@
+{% extends "app/base.html" %}
+{% block title %}Weather of {{ location }}{% endblock %}
+
+{% block content %}
+    <h3 class="text-center mb-4">7-day Weather Forecast of {{ location }}</h3>
+    <div class="container mt-4">
+        {% for key, value in details.items %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Date: {{ key }} {% if forloop.first %}<span class="badge bg-primary">Today</span>{% endif %}
+                    </h2>
+                    <p class="card-text">Min temperature: <span class="text-primary">{{ value.min }}°C</span></p>
+                    <p class="card-text">Max temperature: <span class="text-danger">{{ value.max }}°C</span></p>
+                    <p class="card-text">Average temperature: <span class="text-warning">{{ value.avg }}°C</span></p>
+                    
+                    {% if forloop.first %}
+                        <p class="card-text">Current temperature: <span class="text-info">{{ current }}°C</span></p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
