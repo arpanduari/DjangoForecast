@@ -12,7 +12,7 @@ def index(request):
 
 def search(request):
     if request.method == "POST":
-        location = request.POST.get("location")
+        location = request.POST.get("location").strip()
         params = {"name": location, "count": 100, "format": "json", "language": "en"}
         result = requests.get(SEARCH_URL, params=params).json()
         res = result.get("results", None)
